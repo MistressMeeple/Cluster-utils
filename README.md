@@ -7,7 +7,7 @@ My utilities for ClusterCTRL for the RasPi, sits atop the ClusterCTRL command(s)
 All commands are a sub command of ```cluster```, so the ```logs``` command would be ```cluster logs```
 Command Name | Description
 ------------ | ------------ 
-[log/logs](#logs) 										| Runs ````tail -f /var/log/daemon.log /var/log/kern.log```` as detailed in https://8086.support/index.php?action=faq&cat=23&id=97&artlang=en
+[logs](#logs) 										| Runs ````tail -f /var/log/daemon.log /var/log/kern.log```` as detailed in https://8086.support/index.php?action=faq&cat=23&id=97&artlang=en
 [on [node] [node...]](#pwer)									| Alias for ```clusterctrl on [p1..p4]```<br> Turns on all or the specified space-seperated-list of nodes
 [off [node] [node...]](#power) 									| Alias for ```clusterctrl off [p1..p4]```<br> Turns on all or the specified space-seperated-list of nodes. <br><B>NOTE:</b> this performs a hard shutdown, for safe shutdown use ```safe-off```
 [shutdown [node] [node...]](#power)  						| Sends shutdown command to the specified (or all if unspecified) node(s), awaits the full shutdown and then turns off the node.
