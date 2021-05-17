@@ -69,6 +69,7 @@ Performs *all* of the setup subcommands in the following order:
 2. [USB Boot](#USB-Boot)
 3. [Overlay](#overlay)
 4. [Size Limit](#size-limit)
+5. [Replicate](#Replicate)
 
 ### SSH
 ---
@@ -96,4 +97,11 @@ Args|What it does| Example
 ### Overlay
 
 ### Size limit
+
+### Replicate
+This sets up the other nodes with a duplicate of node1
+Step|Detail|Command
+--|--|--
+1|Clone dir|```sudo cp -r /var/lib/cluster/nfs/p1/* /var/lib/cluster/nfs/p{2..4}```
+2|Init USB Boot| ```sudo USBBoot-init 2 && sudo USBBoot-init 3 && sudo USBBoot-init 4```
 
