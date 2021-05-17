@@ -37,6 +37,7 @@ The 3 commands for controlling power are ```on``` , ```off``` and ```shutdown```
 on	| `cluster on [node...]`|`cluster on p3 p4`	| Turns *on* the specified nodes, or all, by turning *on* the power to the USB header(s) of the node(s)
 off	| `cluster off [node..]`|`cluster off`		| Turns *off* the specified nodes, or all, by turning *off* the power to the USB header(s) of the node(s)
 shutdown|`cluster shutdown node[..]`|`cluster shutdown node2`| Sends a *shutdown* command to specified nodes (or all), awaits confirmation and then turns the USB header(s) off
+
 Shutdown was added to allow a nicer way to shutdown the nodes as it is known sudden power loss to Pi's can corrupt their SD'cards, and I also dont want to take the risk when using USB-Booting either. 
 
 
