@@ -47,7 +47,8 @@ Basically an alias for the ```SSH``` command it self.
 When sending commands to multiple nodes it does it synchronously, i.e. it will send the command to first node,  await its completion, and then progress onto the next node
 Usage|Examples
 --|--
-```cluster ssh 'command'```<br>```cluster ssh [node] command```|```cluster ssh 'uptime && apt show git'```<br>```cluster ssh node2 'ls' ```
+```cluster ssh 'command'```|```cluster ssh 'uptime && apt show git'```
+```cluster ssh [node] command```|```cluster ssh node2 'ls' ```
 
 ## Minicom
 An alias for the raw ```minicom pX``` command , all the setup should have already been done by the installation process. 
