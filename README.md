@@ -77,13 +77,13 @@ This just edits the `/etc/hosts` on the controller to hold the node IP-v4 inform
 ### USB Boot
 ---
 Performs the following (as outlined on the wiki: [How do I USBBoot | ClusterHat](https://8086.support/index.php?action=faq&cat=23&id=97&artlang=en))
-Steps|Command to run  
---|--
-1. Cleans existing node| ```sudo rm -rf /var/lib/clusterctrl/nfs/p1/*```
-2. Pull USB Boot image|  ```sudo wget https://dist.8086.net/clusterctrl/usbboot/buster/2020-02-13/ClusterCTRL-2020-02-13-lite-1-usbboot.tar.xz -O /var/lib/clusterctrl/usb-image.tar.xz```
-3. Extracts image| ```sudo tar -axf /var/lib/clusterctrl/usb-image.tar.xz -C /var/lib/clusterctrl/nfs/p1/```
-4 .Init USBBoot| ```sudo usbboot-init 1```
-5. Enable SSH | ```sudo touch /var/lib/clusterctrl/nfs/p1/boot/ssh```
+Step|Details|Command to run  
+--|--|--
+1|Cleans existing node| ```sudo rm -rf /var/lib/clusterctrl/nfs/p1/*```
+2|Pull USB Boot image|  ```sudo wget https://dist.8086.net/clusterctrl/usbboot/buster/2020-02-13/ClusterCTRL-2020-02-13-lite-1-usbboot.tar.xz -O /var/lib/clusterctrl/usb-image.tar.xz```
+3|Extracts image| ```sudo tar -axf /var/lib/clusterctrl/usb-image.tar.xz -C /var/lib/clusterctrl/nfs/p1/```
+4|Init USBBoot| ```sudo usbboot-init 1```
+5|Enable SSH | ```sudo touch /var/lib/clusterctrl/nfs/p1/boot/ssh```
 </br>
 
 Command Arguments
