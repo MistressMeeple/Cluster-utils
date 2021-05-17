@@ -63,7 +63,7 @@ Usage | Examples
 ----|----
 ```cluster setup (all \| sub command) [node...]``` | ```cluster setup all node3```<br>```cluster setup USBBoot```<br>```cluster setup SSH p2 node.4```
 
-##### All
+### All
 Performs *all* of the setup subcommands in the following order:
 1. [SSH](#SSH)
 2. [USB Boot](#USB-Boot)
@@ -74,7 +74,7 @@ Performs *all* of the setup subcommands in the following order:
 ---
 This just edits the `/etc/hosts` on the controller to hold the node IP-v4 information for all, or just the specified, node(s)
 
-##### USB Boot
+### USB Boot
 ---
 Performs the following (as outlined on the wiki: [How do I USBBoot | ClusterHat](https://8086.support/index.php?action=faq&cat=23&id=97&artlang=en))
 Steps|Command to run  
@@ -93,7 +93,7 @@ Args|What it does| Example
 \-i <br> \-\-image=  | Sets where the image to use is, with 2 options. <br> - If this is an *external* URL then replaces the default URL in step 2. <br> - If this is a *local* URL, step 2 is skipped and step 3 uses the specified file. | ```-i https://dist.8086.net/clusterctrl/usbboot/buster/2020-02-13/ClusterCTRL-2020-02-13-lite-1-usbboot.tar.xz```<br>```--image /home/pi/downloads/usbimage.tar.xz```
 \-d <br> \-\-directory=|Sets where the node's directory is. This defaults to ```/var/lib/clusterctrl/nfs/p1```. This changes the extracted directory in step 3 and where to create ssh file in step 5. <br>Note: If this is changed you will have to manually change the ```/etc/exports``` file appropriately.| ```-d /nfs/node.1```<br>```--directory=/var/lib/nfs/p1```
  
-##### Overlay
+### Overlay
 
-##### Size limit
+### Size limit
 
