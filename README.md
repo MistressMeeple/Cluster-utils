@@ -60,8 +60,8 @@ Usage | Example
 All of the following commands and functions were designed to be used together. All commands are case-*insensitive*.
 
 Usage | Examples
---|--
-```cluster setup (all | sub command) [node...]```|```cluster setup all node3```<br>```cluster setup USBBoot```<br>```cluster setup SSH p2 node.4```
+----|----
+```cluster setup (all | sub command) \[node...\]``` | ```cluster setup all node3```<br>```cluster setup USBBoot```<br>```cluster setup SSH p2 node.4```
 
 ##### All
 Performs *all* of the setup subcommands in the following order:
