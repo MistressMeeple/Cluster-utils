@@ -3,31 +3,30 @@
 # Cluster-utils
 My utilities for ClusterCTRL for the RasPi, sits atop the ClusterCTRL command(s), which can be found at [The ClusterCTRL github](https://github.com/burtyb/clusterhat-image/blob/master/files/usr/sbin/clusterctrl)
 ## Todo:
-[ ] Finish writing the README to include all desired commands and expected usages
-[ ] Get the `logs` function to work properly, having issues with `tail` in bash
-[ ] Write the pass-through functions (on, off, status, alert, led, hub and minicom) with translation between the different node labelling options (p1 2 node3 node.4)
-[ ] Write the shutdown command
-[ ] Write the SSH command
-[ ] Write the setup command
-[ ] Write the setup ssh command
-[ ] Write the setup usbboot command
-[ ] Write the setup overlayfs command
-[ ] Write the setup sizelimit command
-[ ] Write the setup replicate command
-[ ] Customise the USBBoot command to have variable directories for use with this script
-[ ] Choose how to impliment resizing of sizelimit function. A couple options
-  * Have it as a sub command of setup (icky, its not reeeally a setup anymore if its after)
-  * Create a resize command just for the module (but that might imply its always usable, not just when using the module)
-  * Create a conf command to manage post-setup things (probably the best...)
-
-[ ] Setup conf with sub modules to allow...  
-  * node index changes
-  * node name changes 
-  * node ip changes
-  * node fs resize
-  * enable/disable overlay
-  * enable/disable ssh
-  * .. any more?
+ - [ ] Finish writing the README to include all desired commands and expected usages
+ - [ ] Get the `logs` function to work properly, having issues with `tail` in bash
+ - [ ] Write the pass-through functions (on, off, status, alert, led, hub and minicom) with translation between the different node labelling options (p1 2 node3 node.4)
+ - [ ] Write the shutdown command
+ - [ ] Write the SSH command
+ - [ ] Write the setup command
+ - [ ] Write the setup ssh command
+ - [ ] Write the setup usbboot command
+ - [ ] Write the setup overlayfs command
+ - [ ] Write the setup sizelimit command
+ - [ ] Write the setup replicate command
+ - [ ] Customise the USBBoot command to have variable directories for use with this script
+ - [ ] Choose how to impliment resizing of sizelimit function. A couple options
+   - Have it as a sub command of setup (icky, its not reeeally a setup anymore if its after)
+   - Create a resize command just for the module (but that might imply its always usable, not just when using the module)
+   - Create a conf command to manage post-setup things (probably the best...)
+ - [ ] Setup conf with sub modules to allow...  
+  - node index changes
+  - node name changes 
+  - node ip changes
+  - node fs resize
+  - enable/disable overlay
+  - enable/disable ssh
+  - .. any more?
 
 ## Commands
 All commands are a sub command of ```cluster```, so the ```logs``` command would be ```cluster logs```
