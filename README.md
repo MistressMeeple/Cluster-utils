@@ -48,7 +48,7 @@ When sending commands to multiple nodes it does it synchronously, i.e. it will s
 Usage|Examples
 --|--
 ```cluster ssh 'command'```|```cluster ssh 'uptime && apt show git'```
-```cluster ssh [node] command```|```cluster ssh node2 'ls' ```
+```cluster ssh [node] 'command'```|```cluster ssh node2 'ls' ```
 
 ## Minicom
 An alias for the raw ```minicom pX``` command , all the setup should have already been done by the installation process. 
