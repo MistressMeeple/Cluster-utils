@@ -37,7 +37,7 @@ Command Name | Description
 [on [node] [node...]](#power)									| Alias for ```clusterctrl on [p1..p4]```<br> Turns on all or the specified space-seperated-list of nodes
 [off [node] [node...]](#power) 									| Alias for ```clusterctrl off [p1..p4]```<br> Turns on all or the specified space-seperated-list of nodes. <br><B>NOTE:</b> this performs a hard shutdown, for safe shutdown use ```safe-off```
 [shutdown [node] [node...]](#power)  						| Sends shutdown command to the specified (or all if unspecified) node(s), awaits the full shutdown and then turns off the node.
-[ssh \<cmd\>](#ssh) <BR>[ssh [node] \<cmd\>](#ssh) 							| Sends the command to all, or the specified space-sperated-list, node(s) through ssh on the internal network
+[ssh \<cmd\>](#ssh) 							| Sends the command to all, node(s) through ssh on the internal network
 [minicom node](#ssh) 										| Just an alias for ```minicom px```, here for convenience 
 [setup \<all \| module\> [node] [node...]](#setup)  						| Configures all, or the specified space-sperated-list of, node(s) with the chosen sub modules, or all if unspecified
 [status [node] [node...]](#status) 								| Displays the status of all, or the specified space-sperated-list, node(s). 
@@ -68,8 +68,8 @@ Shutdown was added to allow a nicer way to shutdown the nodes as it is known sud
 
 
 ## SSH
-Sends the command (preferably surrounded with quotes) to the specified nodes, or all. 
-Basically an alias for the ```SSH``` command it self. 
+Sends the command to all nodes. 
+Basically an alias for the ```SSH``` command it self, but operating in a for loop for all nodes. 
 When sending commands to multiple nodes it does it synchronously, i.e. it will send the command to first node,  await its completion, and then progress onto the next node
 Usage|Examples
 --|--
