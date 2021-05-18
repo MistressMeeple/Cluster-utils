@@ -94,6 +94,7 @@ However, with all of the modules the file structure is a bit more complex:
 	├ node.X.ext4 		(File mounted as node.X directory, used to set a size limit on the directories)
 	└ pX 			(mounted as an OverlayFS, with node.base as lower, node.X/upper as uppper, and node.X/work as the work dir)
  ```
+ Also ```node.base```, ```node.X/upper```, ```node.X/work``` and ```node.X.ext4``` can be changed to suit personal preference, however ```pX``` folder will not as this requires changing the ClusterCTRL code itself. ~~which is more effort than I want to put in right now~~
 Usage | Examples
 ----|----
 ```cluster setup (all \| sub command) [node...]``` | ```cluster setup all node3```<br>```cluster setup USBBoot```<br>```cluster setup SSH p2 node.4```
