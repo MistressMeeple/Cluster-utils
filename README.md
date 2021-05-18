@@ -89,11 +89,11 @@ However, with all of the modules the file structure is a bit more complex:
 ```
 		$BASE_DIR
 		├ node.base 		(The shared base OS for all connected Pi's		
-		├ node.X 			(The OverlayFS directory)
-		|		├ upper		(OverlayFS upper layer directory)
-		|		└ work		(OverlayFS work layer directory)
+		├ node.X 		(The OverlayFS directory)
+		|  ├ upper		(OverlayFS upper layer directory)
+		|  └ work		(OverlayFS work layer directory)
 		├ node.X.ext4 		(File mounted as node.X directory, used to set a size limit on the directories)
-		└  pX 				(mounted as an OverlayFS, with node.base as lower, node.X/upper as uppper, and node.X/work as the work dir)
+		└  pX 			(mounted as an OverlayFS, with node.base as lower, node.X/upper as uppper, and node.X/work as the work dir)
  ```
 Usage | Examples
 ----|----
