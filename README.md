@@ -87,13 +87,13 @@ All of the following commands and functions were designed to be used together. A
 The default file structure of ClusterCTRL is very simple, it uses `/var/lib/clusterctrl/nfs/pX` as the USB-Bootable nfs locations
 However, with all of the modules the file structure is a bit more complex:
 ```
-		$BASE_DIR
-		├ node.base 		(The shared base OS for all connected Pi's		
-		├ node.X 		(The OverlayFS directory)
-		|  ├ upper		(OverlayFS upper layer directory)
-		|  └ work		(OverlayFS work layer directory)
-		├ node.X.ext4 		(File mounted as node.X directory, used to set a size limit on the directories)
-		└ pX 			(mounted as an OverlayFS, with node.base as lower, node.X/upper as uppper, and node.X/work as the work dir)
+	$BASE_DIR
+	├ node.base 		(The shared base OS for all connected Pi's		
+	├ node.X 		(The OverlayFS directory)
+	|  ├ upper		(OverlayFS upper layer directory)
+	|  └ work		(OverlayFS work layer directory)
+	├ node.X.ext4 		(File mounted as node.X directory, used to set a size limit on the directories)
+	└ pX 			(mounted as an OverlayFS, with node.base as lower, node.X/upper as uppper, and node.X/work as the work dir)
  ```
 Usage | Examples
 ----|----
