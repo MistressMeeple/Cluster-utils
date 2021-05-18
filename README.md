@@ -20,13 +20,14 @@ My utilities for ClusterCTRL for the RasPi, sits atop the ClusterCTRL command(s)
    - Create a resize command just for the module (but that might imply its always usable, not just when using the module)
    - Create a conf command to manage post-setup things (probably the best...)
  - [ ] Setup conf with sub modules to allow...  
-  - node index changes
-  - node name changes 
-  - node ip changes
-  - node fs resize
-  - enable/disable overlay
-  - enable/disable ssh
-  - .. any more?
+   - node index changes
+   - node name changes 
+   - node username changes (from default 'pi')
+   - node ip changes
+   - node fs resize
+   - enable/disable overlay
+   - enable/disable ssh
+   - .. any more?
 
 ## Commands
 All commands are a sub command of ```cluster```, so the ```logs``` command would be ```cluster logs```
