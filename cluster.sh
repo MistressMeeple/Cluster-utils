@@ -1,6 +1,8 @@
 #!/bin/bash
 
-
+function logs(){
+    tail -f /var/log/daemon.log /var/log/kern.log
+}
 function ssh(){
     for N in 1 2 3 4; do
         ssh pi@p$N $1;
