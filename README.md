@@ -7,7 +7,7 @@ My utilities for ClusterCTRL for the RasPi, sits atop the ClusterCTRL command(s)
  - [ ] Get the `logs` function to work properly, having issues with `tail` in bash
  - [ ] Write the pass-through functions (on, off, status, alert, led, hub and minicom) with translation between the different node labelling options (p1 2 node3 node.4)
  - [ ] Write the shutdown command
- - [/] Write the SSH command
+ - [x] Write the SSH command
  - [ ] Write the setup command
  - [ ] Write the setup ssh command
  - [ ] Write the setup usbboot command
